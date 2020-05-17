@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/MyReactPortfolio/static/css/main.bbb5d615.chunk.css",
+    "main.js": "/MyReactPortfolio/static/js/main.02222a8e.chunk.js",
+    "main.js.map": "/MyReactPortfolio/static/js/main.02222a8e.chunk.js.map",
+    "runtime-main.js": "/MyReactPortfolio/static/js/runtime-main.d8cfe0a6.js",
+    "runtime-main.js.map": "/MyReactPortfolio/static/js/runtime-main.d8cfe0a6.js.map",
+    "static/css/2.123d055b.chunk.css": "/MyReactPortfolio/static/css/2.123d055b.chunk.css",
+    "static/js/2.6ad04c65.chunk.js": "/MyReactPortfolio/static/js/2.6ad04c65.chunk.js",
+    "static/js/2.6ad04c65.chunk.js.map": "/MyReactPortfolio/static/js/2.6ad04c65.chunk.js.map",
+    "index.html": "/MyReactPortfolio/index.html",
+    "precache-manifest.cf43566d88df0d1876886c2bd7789ccc.js": "/MyReactPortfolio/precache-manifest.cf43566d88df0d1876886c2bd7789ccc.js",
+    "service-worker.js": "/MyReactPortfolio/service-worker.js",
+    "static/css/2.123d055b.chunk.css.map": "/MyReactPortfolio/static/css/2.123d055b.chunk.css.map",
+    "static/css/main.bbb5d615.chunk.css.map": "/MyReactPortfolio/static/css/main.bbb5d615.chunk.css.map",
+    "static/js/2.6ad04c65.chunk.js.LICENSE.txt": "/MyReactPortfolio/static/js/2.6ad04c65.chunk.js.LICENSE.txt",
+    "static/media/1.gif": "/MyReactPortfolio/static/media/1.554bdc8c.gif",
+    "static/media/2.gif": "/MyReactPortfolio/static/media/2.a8a5d490.gif",
+    "static/media/3.gif": "/MyReactPortfolio/static/media/3.554bdc8c.gif",
+    "static/media/4.gif": "/MyReactPortfolio/static/media/4.d684d4e2.gif",
+    "static/media/My_pic.jpg": "/MyReactPortfolio/static/media/My_pic.509f7027.jpg",
+    "static/media/angular.svg": "/MyReactPortfolio/static/media/angular.4c732369.svg",
+    "static/media/bs.png": "/MyReactPortfolio/static/media/bs.da53dc34.png",
+    "static/media/css.png": "/MyReactPortfolio/static/media/css.35c72f4a.png",
+    "static/media/js.png": "/MyReactPortfolio/static/media/js.5a84d5d7.png",
+    "static/media/sass.png": "/MyReactPortfolio/static/media/sass.d19fb978.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8cfe0a6.js",
+    "static/css/2.123d055b.chunk.css",
+    "static/js/2.6ad04c65.chunk.js",
+    "static/css/main.bbb5d615.chunk.css",
+    "static/js/main.02222a8e.chunk.js"
+  ]
+}
