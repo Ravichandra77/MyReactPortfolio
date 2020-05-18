@@ -1,0 +1,200 @@
+.flipcard {
+    height: 300px;
+    position: relative;
+    perspective: 700px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    text-align: center;
+    min-width: 200px;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.frontCard {
+    -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+    -ms-transform: translate(-50%, -50%) rotateY(0deg);
+    transform: translate(-50%, -50%) rotateY(0deg);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background: #fff;    
+}
+.frontCard, .backCard {
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.backCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+    -ms-transform: translate(-50%, -50%) rotateY(180deg);
+    transform: translate(-50%, -50%) rotateY(180deg);
+    background: linear-gradient(120deg, rgb(100, 100, 110), rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%, rgb(100, 100, 110));
+}
+
+.flipcard:hover .frontCard {
+	-webkit-transform: translate(-50%, -50%) rotateY(180deg);
+	-ms-transform: translate(-50%, -50%) rotateY(180deg);
+	transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.flipcard:hover .backCard {
+	-webkit-transform: translate(-50%, -50%) rotateY(360deg);
+	-ms-transform: translate(-50%, -50%) rotateY(360deg);
+	transform: translate(-50%, -50%) rotateY(360deg);
+}
+
+.flipimg {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .accordion-item__title {
+        font-size: 1.4rem;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imgBox {
+    
+        position: inherit;
+        top: auto;
+        left: auto;
+        transform: inherit;
+    }
+    
+    .wrap, .items:nth-child(even) .wrap {
+        margin-top: 30px;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .wrap::after {
+        content: none;
+    }
+}
+
+@media (max-width: 850px){
+    .flipcard {
+        min-width: 100px;
+        max-width: 230px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+    .accordion-item__title {
+        font-size: 1.25rem;
+    }
+}
+
+  .TodoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+  .frame {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header {
+    display: inline;
+    text-align: center;
+  }
+
+  .justify-content-between.flex-row.list-group {
+      border-bottom: 1px solid #ddd;
+      
+  }
+
+  .lr:before {
+    counter-increment: section;
+    content: counter(section) ".";
+}
+
+.todoForm {
+    margin-top: 20px;
+}
+.addBtn {
+    margin-right: 10px;
+}
+
+.ls {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+.ls:hover {
+    color: #f44;
+}
+.ls:hover::after {
+    content: 'x';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    background: #f44;
+    height: 19px;
+    width: 19px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.TodoWrapper > p {
+    padding-left: 5px;
+}
+
+.btns {
+    display: none;
+}
+.flex-fill.border-0.lr.list-group-item {
+    transition: all 500ms;
+}
+.line-through {
+    text-decoration: line-through;
+    background: #eee;
+    color: #f44;
+    transition: all 500ms;
+}
+.line-through:first-child{
+    border-radius: 0;
+}
+
+.save {
+    padding-right: 15px;
+}
+.line-through ~ .btns {
+    display: block;
+    border-radius: 0;
+    padding-right: 15px;
+    margin-right: 0;
+    transition: all 500ms;
+}
+
+.animated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 500ms ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+}

@@ -1,0 +1,71 @@
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.form-heading {
+    margin-bottom: 40px;
+}
+
+.contact .form-group {
+        position: relative;
+        line-height: 14px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #2b96f1;
+    transition: all 500ms;
+    border-radius: 0;
+}
+
+
+.contact input:invalid + label, textarea:invalid + label {
+    transform: translateY(0);
+}
+.contact input:valid + label, textarea:valid + label {
+    /* transform: translateY(-20px); */
+    display: none;
+    transition: all 500ms;
+}
+.contact input:valid, textarea:valid {
+    border: none;
+    border-bottom: 1px solid #2b96f1;
+    transition: all 500ms;
+    border-radius: 0;
+}
+.contact input, textarea {
+    font-size: 13px;
+    color: #555;
+    outline: none;
+    border: 1px solid #bbb;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.contact input:focus, textarea:focus  {
+    border-color: #2b96f1;
+}
+.contact label {
+    color: #bbb;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 14px;
+    padding: 0 2px;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transition: -webkit-transform 100ms ease;
+    -moz-transition: -moz-transform 100ms ease;
+    -o-transition: -o-transform 100ms ease;
+    -ms-transition: -ms-transform 100ms ease;
+    transition: transform 100ms ease;
+    transform: translateY(0px);
+    transition: all 500ms;
+}
+
+.contact input:focus + label, textarea:focus + label {
+    color: #2b96f1;
+    transform: translateY(-20px);
+    transition: all 500ms;
+}

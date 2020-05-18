@@ -1,0 +1,18 @@
+.footer 
+{
+    background: rgb(2, 7, 39);
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+  
+.footer .row {
+    flex-direction: column;   
+}
+
+.copyright {
+    text-align: center;
+    color: #ddd;
+}
