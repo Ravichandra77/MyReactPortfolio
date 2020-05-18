@@ -9,7 +9,7 @@ import "./work.css";
 export default class WorkComponent extends Component {
     render() {
         return (
-          <div className="page work">
+          <div className="page work body-bg">
           <div className="container">
               <div className="row m-0 flex-column">      
                 <div className="heading">

@@ -22,7 +22,7 @@ const SocilaLinks = [
 
 function About(){
   return (
-    <div className="page about">
+    <div className="page about body-bg">
     <div className="container">
       <div className="row m-0">
         <div className="heading">

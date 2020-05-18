@@ -30,7 +30,7 @@ export default class TodoComponent extends React.Component {
          <div className="row">
            <div className='TodoWrapper col-6'>
              <p className="align-self-start">TODO list without Local Storge</p>
-            <div className='card frame'>
+            <div className='card frame card-shadow'>
             <Header numTodos={this.state.tasks.length} />
             <TodoList tasks={this.state.tasks} onDelete={this.handleDelete} />                  
             <SubmitForm onFormSubmit={this.handleSubmit}  />
@@ -39,7 +39,7 @@ export default class TodoComponent extends React.Component {
 
           <div className='TodoWrapper col-6'>
           <p className="align-self-start">TODO list with Local Storge</p>
-            <div className='card frame'>
+            <div className='card frame card-shadow'>
             <LS_TODO />
             </div>
           </div>

@@ -42,7 +42,7 @@ export default class NewTodo extends Component {
     })
 
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // load items array from localStorage, set in state
     let itemsList = localStorage.getItem('items')
     if (itemsList) {

@@ -9,8 +9,6 @@ import img1 from '../../images/1.gif';
 import img2 from '../../images/2.gif';
 import img3 from '../../images/3.gif';
 import img4 from '../../images/4.gif';
-// import img6 from '../../images/6.jpg';
-import url from "../images.json";
 
 
 
@@ -23,8 +21,6 @@ state = {
     loop: true,
     items: 1,
     autoplay: 1000,
-    animateIn: 'fadeIn',
-    animateOut: "fadeOut",
     lazyLoad: true,
     responsive: {
       0: {

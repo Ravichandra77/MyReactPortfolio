@@ -28,7 +28,7 @@ export default class SubmitForm extends React.Component {
     render() {
       return(
 
-<form className="todoForm" onSubmit={this.handleSubmit}>
+<form className="todoForm mt-5" onSubmit={this.handleSubmit}>
 <div className="input-group"> 
 <input type="text" className="form-control" placeholder='Enter Item' ref={this.newRef}
        onChange={(e) =>  this.setState({term: e.target.value})} />

@@ -17,7 +17,7 @@ export default class MyPosts extends React.Component {
       render(){
      
         return (
-  <div className="page posts">
+  <div className="page posts body-bg">
     <div className="container">
       <div className="row m-0">
       <div className="heading">

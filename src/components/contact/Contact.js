@@ -6,7 +6,7 @@ import {Form, Button} from "react-bootstrap";
 export default class ContactComponent extends React.Component {
     render() {
         return (
-          <div className="contact page bg-white">
+          <div className="contact pages body-bg">
           <div className="container">
             <div className="row m-0">
               <div className="heading">

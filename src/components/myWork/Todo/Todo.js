@@ -18,15 +18,18 @@ export default class Todo extends React.Component {
   }
 
 edit = () => {
-  this.setState({Editable: true})
+    this.setState({Editable: true})
+   //console.log(this.refs.myRef.value)
 }
+
 
 save = () => {
   this.setState({
     Editable: false,
-    content: this.myRef.current.value,
-    isClicked: false
+    content: this.refs.myRef.value,
+    isClicked: false    
   })
+  //console.log(this.refs.myRef.value)
 }
 
 cancel = (e) => {
@@ -43,27 +46,17 @@ cancel = (e) => {
     this.setState({isClicked: !this.state.isClicked})
   }
 
-  animated = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    transition: "all 500ms ease-in-out",
-    transform: "scale(0)",
-    opacity: 0
-}
-
 render() {
   return(
     <MyContext.Provider value={this.state}>
-    <ListGroup className={`justify-content-between flex-row ${this.state.isAnimated ? "animated": ""}`}>
+    <ListGroup className="justify-content-between flex-row">
       {this.state.Editable ? 
       <div className="input-group"> 
-      <input type="text" className="form-control" placeholder='Enter Item' ref={this.myRef}
+      <input type="text" className="form-control border-0" placeholder='Enter Item' ref="myRef"
              onChange={(e) =>  this.setState({term: e.target.value})} />
       
         <div className="input-group-append">
-          <button className="btn btn-secondary" type="button" onClick={this.cancel}>Cancel</button>
+          {/* <button className="btn btn-secondary" type="button" onClick={this.cancel}>Cancel</button> */}
           <button className="btn btn-success" type="button" onClick={this.save} >Save</button>
         </div>
     </div>  :
@@ -74,10 +67,10 @@ render() {
       {this.state.content}
      </ListGroup.Item>
     }
-      <button className="EditBtn btns border-0" onClick={this.edit}>
+      <button className="EditBtn btns border-0 body-bg" onClick={this.edit}>
      <span className="text-danger"> <FontAwesomeIcon icon={faEdit} /></span>           
       </button>
-      <button className="DelBtn btns border-0" onClick={() => { return (this.setState({isAnimated: true}), this.props.onDelete(this.props.id)) }
+      <button className="DelBtn btns border-0 body-bg" onClick={() => { this.props.onDelete(this.props.id) }
     }>
      <span className="text-danger"> <FontAwesomeIcon icon={faTrashAlt} /></span>           
       </button>

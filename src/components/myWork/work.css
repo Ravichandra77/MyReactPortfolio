@@ -170,7 +170,7 @@
 }
 .line-through {
     text-decoration: line-through;
-    background: #eee;
+    background: rgba(0, 0, 0, 0.1);
     color: #f44;
     transition: all 500ms;
 }
