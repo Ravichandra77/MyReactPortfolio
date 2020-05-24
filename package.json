@@ -1,0 +1,19 @@
+{
+  "name": "myreactportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "precache-manifest.cf43566d88df0d1876886c2bd7789ccc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravichandra77/MyReactPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravichandra77/MyReactPortfolio/issues"
+  },
+  "homepage": "https://github.com/Ravichandra77/MyReactPortfolio#readme"
+}
